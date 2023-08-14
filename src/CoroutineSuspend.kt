@@ -19,7 +19,6 @@ import kotlinx.coroutines.runBlocking
 //    Thread.sleep(1000)
 //}
 
-
 //suspend fun main() {
 //    log(1)
 //    GlobalScope.launch {
