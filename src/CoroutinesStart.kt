@@ -2,9 +2,11 @@ import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import java.time.LocalTime
+import java.time.format.DateTimeFormatter
 
 fun log(msg: Any) {
-    println("[${Thread.currentThread().name}] $msg")
+    println("${LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss.SSS"))} [${Thread.currentThread().name}] $msg")
 }
 
 //suspend fun main(args: Array<String>) {
